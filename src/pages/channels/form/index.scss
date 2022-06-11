@@ -1,0 +1,21 @@
+#channel-page {
+  height: 100%;
+  .content {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+
+    .top-line {
+      margin-bottom: 10px;
+      .title {
+        color: var(--primary-color);
+      }
+    }
+
+    .tab-container {
+      background-color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

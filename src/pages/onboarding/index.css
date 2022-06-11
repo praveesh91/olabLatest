@@ -1,0 +1,12 @@
+.curve-line-background {
+  background: url("../../../public/images/down-curves.svg"),
+    url("../../../public/images/up-curves.svg");
+  background-size: 250px, 250px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom left;
+}
+.onboarding-carousel.carousel,
+.onboarding-carousel .carousel-inner,
+.onboarding-carousel .carousel-inner > .carousel-item {
+  height: 100%;
+}

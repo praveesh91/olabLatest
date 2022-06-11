@@ -1,0 +1,27 @@
+.staff-background {
+  background: url("../../../public/images/staff-activity.svg"),
+    linear-gradient(to bottom, #f6f7f9, #f6f7f9),
+    linear-gradient(to bottom, white, white);
+  background-size: 400px, 100% calc(100% - 300px), 100% 300px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 100% calc(100% - 100px), 0% 0%, 0% 100%;
+}
+
+.login-form-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 50px 75px;
+  background-color: white;
+}
+
+.create-account-btn {
+  border: white;
+}
+
+.alert {
+  padding: 0.5rem 1rem;
+}
+
+.alert-dismissible .btn-close {
+  padding: 0.8rem 1rem;
+}

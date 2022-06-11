@@ -1,0 +1,11 @@
+#dashboard {
+  height: 100%;
+  .title {
+    color: var(--primary-color);
+  }
+  .dashboard-content {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+  }
+}

@@ -1,0 +1,15 @@
+.custom-overflow-auto-imp {
+  overflow: auto !important;
+}
+
+.custom-overflow-auto-not-imp {
+  overflow: auto;
+}
+
+.custom-overflow-hidden-imp {
+  overflow: auto !important;
+}
+
+.custom-overflow-hidden-not-imp {
+  overflow: auto;
+}

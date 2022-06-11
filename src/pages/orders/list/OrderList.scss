@@ -1,0 +1,121 @@
+.orderListContainer {
+  padding: 25px;
+
+  &__topNav {
+    &__name {
+      padding-top: 10px;
+      display: flex;
+      div {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      h4 {
+        font-size: var(--xxl-font-size);
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+    }
+  }
+  &__content {
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    &__controls {
+      align-items: baseline;
+      &__filterSearch {
+        display: flex;
+      }
+      .ant-input-search
+        .ant-input-group
+        .ant-input-affix-wrapper:not(:last-child) {
+        border-radius: 0;
+        height: 36px;
+      }
+      .ant-input-search-button {
+        height: 36px;
+      }
+    }
+  }
+
+  :global {
+    .ant-form label {
+      height: auto;
+    }
+  }
+  :global {
+    .ant-form-item-extra {
+      font-size: var(--xs-font-size);
+      padding-top: 5px;
+    }
+  }
+  :global {
+    .ant-form-item-label > label::after {
+      content: "";
+    }
+  }
+}
+.orderTable {
+  padding-bottom: 20px;
+  &__syncLoading {
+    cursor: pointer;
+    animation: rotation 2s infinite linear;
+  }
+  &__syncLoaded {
+    cursor: pointer;
+  }
+  &__tags {
+    padding-bottom: 5px;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+}
+.orderFilter {
+  .ant-btn {
+    height: 36px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .ant-btn {
+    height: 36px;
+  }
+  .ant-badge-count {
+    z-index: 99;
+  }
+  &__modal {
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      background-color: #7d7ab9;
+      color: white;
+    }
+    &__group1 {
+      width: 100%;
+      .ant-radio-button-wrapper {
+        width: 50%;
+        text-align: center;
+      }
+    }
+    &__group2 {
+      width: 100%;
+      .ant-radio-button-wrapper {
+        width: 33.3%;
+        text-align: center;
+      }
+    }
+  }
+}
+.orderTagsContainer {
+  padding: 10px 0px;
+  span {
+    margin: 0px 4px 4px 0px;
+  }
+}
+.orderListPagination {
+  text-align: end;
+  padding-top: 10px;
+}

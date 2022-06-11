@@ -1,0 +1,76 @@
+.bundleListContainer {
+  padding: 25px;
+  :global {
+    .ant-btn {
+      height: 36px;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    &__title {
+      color: var(--primary-color);
+      font-size: var(--xxl-font-size);
+      font-weight: 600;
+    }
+  }
+  &__uploadBtn {
+    display: none;
+  }
+  &__uploadBtnIcon {
+    padding-right: 8px;
+  }
+  &__uploadLabel {
+    cursor: pointer;
+    padding: 5px 9px;
+  }
+  &__uploadLabel:hover {
+    color: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.018);
+    border-color: transparent;
+  }
+  &__content {
+    background-color: white;
+    padding: 20px;
+    &__controls {
+      padding: 0px 0px 20px 0px;
+      &__filterSearch {
+        display: flex;
+
+        :global {
+          .ant-btn {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+          }
+          .ant-input-search
+            .ant-input-group
+            .ant-input-affix-wrapper:not(:last-child) {
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            height: 36px;
+          }
+        }
+      }
+      &__pagination {
+        text-align: end;
+        padding-top: 20px;
+      }
+      &__tagsListDelete {
+        padding-top: 20px;
+        display: flex;
+        :global {
+          .ant-input {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            height: 36px;
+          }
+          .ant-btn-group > .ant-btn:first-child:not(:last-child) {
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+          }
+        }
+      }
+    }
+  }
+}
